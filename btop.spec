@@ -1,3 +1,5 @@
+%define _empty_manifest_terminate_build 0
+
 Name:           btop
 Version:        1.2.7
 Release:        1
