@@ -1,4 +1,4 @@
-Don't add random optimizations
+# Don't add random optimizations
 
 %define _empty_manifest_terminate_build 0
 
