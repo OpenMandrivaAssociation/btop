@@ -1,7 +1,9 @@
+Don't add random optimizations
+
 %define _empty_manifest_terminate_build 0
 
 Name:           btop
-Version:        1.2.7
+Version:        1.2.8
 Release:        1
 Summary:        Usage and stats for processor, memory, disks, network and processes
 Group:          Monitoring
