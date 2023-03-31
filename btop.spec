@@ -4,7 +4,7 @@
 
 Name:           btop
 Version:        1.2.13
-Release:        1
+Release:        2
 Summary:        Usage and stats for processor, memory, disks, network and processes
 Group:          Monitoring
 License:        Apache 2.0
