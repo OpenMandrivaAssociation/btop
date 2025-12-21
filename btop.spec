@@ -10,6 +10,7 @@ Group:          Monitoring
 License:        Apache 2.0
 URL:            https://github.com/aristocratos/btop
 Source:         https://github.com/aristocratos/btop/archive/v%{version}/%{name}-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:  coreutils
 
 %description
