@@ -25,6 +25,7 @@ C++ version and continuation of bashtop and bpytop.
 %global optflags %{optflags} -fuse-ld=mold
 
 %build
+# For now use GCC due bug: https://github.com/aristocratos/btop/issues/1944
 export CC=gcc
 export CXX=g++
 %make_build
