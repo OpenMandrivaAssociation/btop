@@ -4,13 +4,14 @@
 
 Name:           btop
 Version:        1.4.8
-Release:        1
+Release:        2
 Summary:        Usage and stats for processor, memory, disks, network and processes
 Group:          Monitoring
 License:        Apache 2.0
 URL:            https://github.com/aristocratos/btop
 Source:         https://github.com/aristocratos/btop/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	make
+BuildRequires:  mold
 BuildRequires:  coreutils
 
 %description
@@ -20,7 +21,12 @@ C++ version and continuation of bashtop and bpytop.
 %prep
 %autosetup -p1
 
+# Try use mold if compiled with GCC
+%global optflags %{optflags} -fuse-ld=mold
+
 %build
+export CC=gcc
+export CXX=g++
 %make_build
 
 %install
